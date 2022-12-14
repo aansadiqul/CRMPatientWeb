@@ -1,0 +1,135 @@
+.sidebar {
+    background: var(--theme-color);
+    width: 250px;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.main-logo {
+    padding: 8px 20px;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu-sub,
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px 0;
+    margin: 1px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu li:hover {
+    background: var(--secondary-theme-color);
+}
+
+.menu li.menu-item.active {
+    position: relative;
+    background: var(--secondary-theme-color);
+}
+
+.menu li.menu-item.sub-active {
+    background: var(--secondary-theme-color);
+}
+
+.menu li.menu-item.active {
+    position: relative;
+    background: var(--secondary-theme-color);
+}
+
+.menu li.menu-item.active::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    border-radius: 0 6px 6px 0;
+    background: var(--text-white);
+    position: absolute;
+    z-index: 1000;
+}
+
+.menu li a {
+    font-size: var(--font-14);
+    font-weight: var(--weight-500);
+    text-decoration: none;
+    color: var(--text-white);
+    margin: 0 20px;
+}
+
+.menu-sub {
+    display: none;
+}
+
+.menu-sub.show {
+    display: block;
+}
+
+.menu-sub .menu-sub-item {
+    padding: 7px 0;
+}
+
+.menu-sub .menu-sub-item a {
+    font-size: var(--font-12);
+    font-weight: var(--weight-300);
+}
+
+.menu-sub .menu-sub-item:hover {
+    background: var(--theme-color);
+}
+
+.menu-sub-item.active {
+    background: var(--theme-color);
+    position: relative;
+}
+
+.menu-sub-item.active::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    border-radius: 0 6px 6px 0;
+    background: var(--text-white);
+    position: absolute;
+    z-index: 1000;
+}
+
+.profile-img {
+    background: var(--green-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile-img .profile-img-txt {
+    font-size: var(--font-14);
+    font-weight: var(--weight-700);
+    color: var(--text-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-box {
+    background: var(--secondary-theme-color);
+    border-top: 1.5px solid #ffffff4a;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

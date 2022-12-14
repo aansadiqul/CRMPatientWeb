@@ -1,0 +1,82 @@
+<div class="sidebar">
+	<div class="main-logo">
+		<img src="/assets/img/haeder-logo.png" alt="">
+	</div>
+	<div class="menu">
+		<ul class="menu-main">
+			<li class="menu-item" [routerLinkActive]="['active']" [routerLink]="['/dashboard']">
+				<a>Dashboard</a>
+			</li>
+			<li class="menu-item" [class.sub-active]="isPatientMenu">
+				<a class="d-flex align-items-center justify-content-between" (click)="isPatientMenu = !isPatientMenu">
+					Patients
+					<i class="bx bx-chevron-down font-15 text-white weight-300" [class.rotate-180]="isPatientMenu"></i>
+				</a>
+				<ul class="menu-sub" [class.show]="isPatientMenu">
+					<li class="menu-sub-item" [routerLink]="['/patient']" routerLinkActive="active">
+						<a>Leads</a>
+					</li>
+					<li class="menu-sub-item">
+						<a>Referral</a>
+					</li>
+					<li class="menu-sub-item">
+						<a>Enrolment</a>
+					</li>
+					<li class="menu-sub-item">
+						<a>Intake</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-item" [class.sub-active]="isAideMenu">
+				<a class="d-flex align-items-center justify-content-between" (click)="isAideMenu = !isAideMenu">
+					Aides
+					<i class="bx bx-chevron-down font-15 text-white weight-300" [class.rotate-180]="isAideMenu"></i>
+				</a>
+				<ul class="menu-sub" [class.show]="isAideMenu">
+					<li class="menu-sub-item active">
+						<a>Leads</a>
+					</li>
+					<li class="menu-sub-item">
+						<a>Referral</a>
+					</li>
+					<li class="menu-sub-item">
+						<a>Enrolment</a>
+					</li>
+					<li class="menu-sub-item">
+						<a>Intake</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu-item" [routerLinkActive]="['active']" [routerLink]="['/match']">
+				<a>Match</a>
+			</li>
+			<li class="menu-item" [routerLinkActive]="['active']" [routerLink]="['/settings']">
+				<a>Settings</a>
+			</li>
+			<li class="menu-item" [routerLinkActive]="['active']" [routerLink]="['/task']">
+				<a>Task</a>
+			</li>
+			<li class="menu-item" [routerLinkActive]="['active']" [routerLink]="['/messaging']">
+				<a>Messaging</a>
+			</li>
+			<li class="menu-item" [routerLinkActive]="['active']" [routerLink]="['/report']">
+				<a>Report</a>
+			</li>
+			<li class="menu-item" [routerLinkActive]="['active']" [routerLink]='["/admin-setup"]'>
+				<a>Admin Setup</a>
+			</li>
+		</ul>
+		<div class="profile-box d-flex align-items-center justify-content-between">
+			<div class="profile-box-item d-flex align-items-center gap-10">
+				<div class="profile-img">
+					<span class="profile-img-txt">HS</span>
+				</div>
+				<div class="profile-info d-flex flex-column">
+					<span class="font-12 weight-600">H. Sayeed</span>
+					<span class="font-10 weight-300">Switch user</span>
+				</div>
+			</div>
+			<i class="bx bx-chevron-down font-18 text-white weight-300"></i>
+		</div>
+	</div>
+</div>

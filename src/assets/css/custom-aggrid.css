@@ -1,0 +1,47 @@
+.ag-theme-alpine .ag-root-wrapper {
+    border: none;
+}
+
+.ag-theme-alpine .ag-ltr .ag-cell,
+.ag-theme-alpine .ag-row,
+.ag-theme-alpine {
+    font-size: 11px !important;
+}
+
+.ag-theme-alpine .ag-header {
+    border-top: .5pt solid #E0E0E0;
+    border-bottom: .5pt solid #E0E0E0;
+}
+
+.ag-theme-alpine .ag-header-row {
+    color: #888888 !important;
+    font-weight: 500 !important;
+    background: #f5f5f5 !important;
+}
+
+.ag-theme-alpine .ag-row {
+    border-color: #E0E0E0;
+}
+
+.ag-theme-alpine .ag-ltr .ag-cell:not(:last-child) {
+    border-right: 1px solid #E0E0E0;
+}
+
+.ag-theme-alpine .ag-header-cell:not(:last-child),
+.ag-theme-alpine .ag-header-group-cell:not(:last-child) {
+    border-right: 1px solid #E0E0E0;
+}
+
+.ag-header-cell-resize {
+    width: 0;
+}
+
+.ag-theme-alpine .ag-cell,
+.ag-theme-alpine .ag-full-width-row .ag-cell-wrapper.ag-row-group {
+    padding: 0 10px;
+}
+
+.ag-theme-alpine .ag-header-cell,
+.ag-theme-alpine .ag-header-group-cell {
+    padding: 0 10px;
+}

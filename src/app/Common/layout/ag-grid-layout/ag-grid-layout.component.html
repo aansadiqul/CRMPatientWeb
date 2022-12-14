@@ -1,0 +1,34 @@
+<div class="crm-table">
+    <div class="crm-table-top d-flex align-items-center justify-content-between">
+        <div class="crm-table-search d-flex align-items-center flex-fill gap-2" *ngIf="hideSearch">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.303" height="10.303" viewBox="0 0 10.303 10.303">
+                <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(0.5 0.5)">
+                    <path id="Path_298" data-name="Path 298"
+                        d="M12.586,8.543A4.043,4.043,0,1,1,8.543,4.5a4.043,4.043,0,0,1,4.043,4.043Z"
+                        transform="translate(-4.5 -4.5)" fill="none" stroke="#bababa" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1" />
+                    <path id="Path_299" data-name="Path 299" d="M27.173,27.173l-2.2-2.2"
+                        transform="translate(-18.077 -18.077)" fill="none" stroke="#bababa" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1" />
+                </g>
+            </svg>
+
+            <input type="text" class="width-100p" placeholder="Search">
+        </div>
+        <div class="buttons d-flex align-items-center gap-2">
+            <button type="button" [class]="action.className" [disabled]="action.disabled"
+                *ngFor="let action of objAction" (click)="onAction.emit(action.name)">
+                {{action.name}}
+            </button>
+        </div>
+    </div>
+    <div class="crm-table-body">
+        <ag-grid-angular #myGrid class="ag-theme-alpine" [gridOptions]="gridOptions" [columnDefs]="columnDefs"
+            [modules]="modules" [overlayNoRowsTemplate]="overlayNoRowsTemplate">
+        </ag-grid-angular>
+        <div class="d-flex align-items-center gap-2 font-10 py-1">
+            <span class="text-light">Row: </span>
+            {{ totalCount |number }}
+        </div>
+    </div>
+</div>

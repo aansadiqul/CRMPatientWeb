@@ -1,0 +1,15 @@
+.header {
+    background: #fff;
+    width: calc(100vw - 250px);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px #00000010;
+}
+
+.page-title {
+    font-size: var(--font-14);
+    color: var(--theme-color);
+}

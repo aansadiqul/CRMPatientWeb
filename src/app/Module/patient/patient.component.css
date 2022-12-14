@@ -1,0 +1,15 @@
+.patient-body {
+    border-radius: 4px;
+    padding: 0 15px;
+    background: #fff;
+    height: calc(100vh - 210px);
+}
+
+:host ::ng-deep app-ag-grid-layout .crm-table-body .ag-theme-alpine {
+    height: calc(100vh - 278px);
+    width: 100%;
+}
+
+:host ::ng-deep app-ag-grid-layout .crm-table-body .ag-theme-alpine .ag-header-cell:last-child .ag-header-cell-label {
+    justify-content: center;
+}

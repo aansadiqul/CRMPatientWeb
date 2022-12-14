@@ -1,0 +1,119 @@
+<div class="crm-gadgets">
+	<div class="card gadget-card crm-org">
+		<div class="card org-card bg-light-info">
+			<span class="org-card-head text-info font-12">Cityblock Health</span>
+			<div class="org-card-body">
+				<div class="d-flex align-items-center gap-1">
+					<span class="text-light font-10">New: </span>
+					<span class="font-11 weight-600">34</span>
+				</div>
+				<div class="d-flex align-items-center gap-1">
+					<span class="text-light font-10">Old: </span>
+					<span class="font-11 weight-600">56</span>
+				</div>
+			</div>
+		</div>
+		<div class="card org-card bg-light-success">
+			<span class="org-card-head text-success font-12">Eden Health</span>
+			<div class="org-card-body">
+				<div class="d-flex align-items-center gap-1">
+					<span class="text-light font-10">New: </span>
+					<span class="font-11 weight-600">34</span>
+				</div>
+				<div class="d-flex align-items-center gap-1">
+					<span class="text-light font-10">Old: </span>
+					<span class="font-11 weight-600">56</span>
+				</div>
+			</div>
+		</div>
+		<div class="card org-card bg-light-primary">
+			<span class="org-card-head text-primary font-12">Kaia Health</span>
+			<div class="org-card-body">
+				<div class="d-flex align-items-center gap-1">
+					<span class="text-light font-10">New: </span>
+					<span class="font-11 weight-600">34</span>
+				</div>
+				<div class="d-flex align-items-center gap-1">
+					<span class="text-light font-10">Old: </span>
+					<span class="font-11 weight-600">56</span>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="org-see-more-btn">See More</button>
+	</div>
+	<div class="card gadget-card">
+		<div class="gadget-card-header d-flex align-items-center justify-content-between">
+			<span class="weight-600 font-11">Assign to</span>
+			<a class="primary-link font-10">See all</a>
+		</div>
+		<div class="gadget-card-body d-flex flex-wrap mt-1">
+			<div class="badge-theme">Me (23)</div>
+			<div class="badge-light-theme">Eugene (23)</div>
+			<div class="badge-light-theme">Luis Miller (41)</div>
+			<div class="badge-light-theme">Brandon (12)</div>
+			<div class="badge-light-theme">Robert (7)</div>
+			<div class="badge-light-theme">James Sadeq (55)</div>
+			<div class="badge-light-theme">Eugene (23)</div>
+			<div class="badge-light-theme">Luis Miller (41)</div>
+			<div class="badge-light-theme">Brandon (12)</div>
+			<div class="badge-light-theme">Robert (7)</div>
+			<div class="badge-light-theme">James Rodrygo (55)</div>
+		</div>
+	</div>
+	<div class="card gadget-card">
+		<div class="gadget-card-header d-flex align-items-center justify-content-between">
+			<span class="weight-600 font-11">Source</span>
+			<a class="primary-link font-10">See all</a>
+		</div>
+		<div class="gadget-card-body d-flex flex-wrap mt-1">
+			<div class="badge-light-theme">Website (23)</div>
+			<div class="badge-light-theme">HHAex (23)</div>
+			<div class="badge-light-theme">Samrt Sheet (41)</div>
+			<div class="badge-light-theme">Indeed (12)</div>
+			<div class="badge-light-theme">LinkedIn (7)</div>
+			<div class="badge-light-theme">Website (23)</div>
+			<div class="badge-light-theme">HHAex (23)</div>
+			<div class="badge-light-theme">Samrt Sheet (41)</div>
+			<div class="badge-light-theme">Indeed (12)</div>
+			<div class="badge-light-theme">LinkedIn (7)</div>
+		</div>
+	</div>
+	<div class="card gadget-card">
+		<div class="gadget-card-header d-flex align-items-center justify-content-between">
+			<span class="weight-600 font-11">Tags</span>
+			<a class="primary-link font-10">See all</a>
+		</div>
+		<div class="gadget-card-body d-flex flex-wrap mt-1">
+			<div class="badge-pink badge-round font-9">Didn't pick (23)</div>
+			<div class="badge-yellow badge-round font-9">Serious case (23)</div>
+			<div class="badge-violet badge-round font-9">Disease (41)</div>
+			<div class="badge-orange badge-round font-9">All risk (12)</div>
+			<div class="badge-red badge-round font-9">Urgent (7)</div>
+		</div>
+	</div>
+	<div class="card gadget-card">
+		<div class="gadget-card-header d-flex align-items-center justify-content-between">
+			<span class="weight-600 font-11">Status</span>
+			<a class="primary-link font-10">See all</a>
+		</div>
+		<div class="gadget-card-body d-flex flex-wrap mt-1">
+			<div class="badge-green badge-round font-9">Leads (23)</div>
+			<div class="badge-yellow badge-round font-9">Referral (23)</div>
+			<div class="badge-blue badge-round font-9">Enrollment (41)</div>
+			<div class="badge-orange badge-round font-9">Intake (12)</div>
+		</div>
+	</div>
+</div>
+<div class="patient-body mt-3">
+
+	<app-ag-grid-layout [totalCount]="totalCount" [columnDefs]="columnDefs" [gridOptions]="gridOptions"
+		[objAction]="[{ name: 'Details' , className: 'theme-outline-button' }, { name: 'Add New' , className: 'theme-button' }]"
+		(onAction)="onAction($event)">
+	</app-ag-grid-layout>
+</div>
+
+<!-- add and edit sidebar for patient -->
+<app-patient-form-sidebar></app-patient-form-sidebar>
+
+<!-- patient details sidebar -->
+<app-patient-details-sidebar></app-patient-details-sidebar>

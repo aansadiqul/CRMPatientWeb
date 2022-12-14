@@ -1,0 +1,133 @@
+.badge-theme {
+    background: var(--theme-color);
+    color: var(--text-white);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-light-theme {
+    background: var(--light-theme-color);
+    color: var(--theme-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-light-success {
+    background: var(--light-success-color);
+    color: var(--success-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-light-primary {
+    background: var(--light-primary-color);
+    color: var(--primary-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-light-warning {
+    background: var(--light-warning-color);
+    color: var(--warning-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-light-danger {
+    background: var(--light-danger-color);
+    color: var(--danger-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-light-info {
+    background: var(--light-info-color);
+    color: var(--info-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+
+.badge-green {
+    background: var(--green-color);
+    color: var(--text-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-blue {
+    background: var(--blue-color);
+    color: var(--text-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-pink {
+    background: var(--pink-color);
+    color: var(--text-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-violet {
+    background: var(--violet-color);
+    color: var(--text-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-red {
+    background: var(--red-color);
+    color: var(--text-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-orange {
+    background: var(--orange-color);
+    color: var(--text-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-yellow {
+    background: var(--yellow-color);
+    color: var(--text-color);
+    font-size: var(--font-10);
+    border-radius: 3px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+.badge-round {
+    border-radius: 20px;
+    padding: 2px 7px;
+    line-height: 12px;
+    width: fit-content;
+}

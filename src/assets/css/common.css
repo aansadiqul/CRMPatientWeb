@@ -1,0 +1,344 @@
+::placeholder {
+    /* Chrome/Opera/Safari */
+    color: #BABABA !important;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #BABABA !important;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #BABABA !important;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #BABABA !important;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #BABABA !important;
+}
+
+.crm-select {
+    border: 1px solid var(--border-color);
+    outline: none;
+    font-size: var(--font-11);
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-weight: var(--weight-500);
+}
+
+.crm-select:focus {
+    border-color: var(--theme-color);
+}
+
+.crm-select option {
+    font-size: var(--font-11);
+    padding: 3px 5px;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.height-100p {
+    height: 100%;
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.width-50p {
+    width: 50%;
+}
+
+.width-33p {
+    width: 33%;
+}
+
+.width-25p {
+    width: 25%;
+}
+
+.crm-body-card {
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.crm-table {
+    /* padding: 10px 0 0 0; */
+    background: #fff;
+}
+
+.crm-table-top {
+    padding: 10px 0;
+}
+
+.crm-table-search input {
+    border: none;
+    outline: none;
+    font-size: var(--font-11);
+}
+
+.department-card {
+    border: 1px solid #f0f0f0;
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+select.form-select,
+input.form-control {
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    font-size: var(--font-11);
+    height: 35px;
+    /* line-height: 35px; */
+    outline: none;
+    box-shadow: none !important;
+}
+
+textarea.form-control {
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    font-size: var(--font-11);
+    min-height: 60px;
+    outline: none;
+    box-shadow: none !important;
+}
+
+select.form-select:focus,
+textarea.form-control:focus,
+input.form-control:focus {
+    border-color: var(--theme-color) !important;
+}
+
+input.form-control.error {
+    border-color: var(--danger-color);
+}
+
+label.form-label {
+    margin-bottom: 5px;
+    font-size: var(--font-11);
+}
+
+select.form-select option {
+    border-radius: 0;
+}
+
+.form-check {
+    margin: 0;
+    padding: 0;
+}
+
+.form-check .check-label {
+    font-size: var(--font-11);
+    font-weight: var(--weight-400);
+}
+
+.form-check input[type=checkbox] {
+    position: relative;
+    border: 1px solid #c5c5c5;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 0.6em 2px 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: middle;
+    height: 12px;
+    width: 12px;
+    -webkit-appearance: none;
+    transition: all 0.3s ease;
+}
+
+.form-check input[type=checkbox]:hover {
+    border-color: var(--theme-color);
+}
+
+.form-check input[type=checkbox]:checked {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+}
+
+.form-check input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0px -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+}
+
+.form-password {
+    position: relative;
+}
+
+.form-password svg {
+    position: absolute;
+    top: 11px;
+    right: 8px;
+}
+
+.form-password svg.show-pass {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+}
+
+
+/* offcanvas start */
+.offcanvas.show {
+    visibility: visible;
+    width: 40%;
+}
+
+.offcanvas-start {
+    box-shadow: 0 5px 10px #00000025;
+    right: 0;
+    top: 51px;
+    width: 0;
+    left: auto;
+    border: none;
+    transform: translateX(100%);
+}
+
+.offcanvas-title {
+    width: 75%;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid var(--light-border-color);
+}
+
+.offcanvas-footer {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.crm-tab-menu {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    border-bottom: 1px solid var(--light-border-color);
+}
+
+.crm-tab-menu .tab-menu-item {
+    text-align: center;
+    font-size: var(--font-12);
+    font-weight: var(--weight-600);
+    color: var(--text-light-color);
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.crm-tab-menu .tab-menu-item:hover {
+    color: var(--text-color);
+}
+
+.crm-tab-menu .tab-menu-item.active {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.crm-tab-body {
+    max-height: calc(100vh - 205px);
+    overflow-y: auto;
+}
+
+.tab-body-content {
+    display: none;
+    padding: 0.5rem 0;
+}
+
+.tab-body-content.active {
+    display: block;
+}
+
+.crm-details-tab {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* padding: 0 10px; */
+}
+
+.data-table tr td:first-child {
+    min-width: 50%;
+    color: var(--text-light-color);
+}
+
+.data-table tr td:last-child {
+    min-width: 40%;
+}
+
+.data-table tr td {
+    padding: 10px 5px;
+    font-size: var(--font-11);
+    font-weight: var(--weight-400);
+}
+
+/* offcanvas end */
+
+.crm-gadgets {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.gadget-card {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 100px;
+    max-height: 116px;
+    overflow: hidden;
+}
+
+.gadget-card.crm-org {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 10px;
+    row-gap: 7px;
+}
+
+.org-card {
+    border: none;
+    border-radius: 4px;
+    /* background: #efefef; */
+    display: grid;
+    padding: 5px 10px;
+}
+
+.org-card-body {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.gadget-card-body {
+    column-gap: 7px;
+    row-gap: 5px;
+    overflow: hidden;
+}

@@ -1,0 +1,177 @@
+button {
+    line-height: normal !important;
+    padding: 3px 10px;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+}
+
+.theme-button {
+    background: var(--theme-color);
+    color: var(--text-white);
+    font-size: var(--font-11);
+    border: none;
+    border-radius: 3px;
+    padding: 4px 20px;
+    font-weight: var(--weight-500);
+}
+
+.theme-button:hover {
+    background: var(--secondary-theme-color);
+    box-shadow: 0 2px 5px var(--shadow-color) !important;
+}
+
+.theme-outline-button {
+    border: 1px solid var(--theme-color);
+    background: var(--text-white);
+    color: var(--theme-color);
+    font-size: var(--font-11);
+    border-radius: 3px;
+    padding: 3px 20px;
+    font-weight: var(--weight-500);
+}
+
+.theme-outline-button:hover {
+    border: 1px solid var(--secondary-theme-color);
+    color: var(--secondary-theme-color);
+    box-shadow: 0 2px 5px var(--shadow-color) !important;
+}
+
+.modal-cancel-button {
+    font-size: var(--font-11);
+    font-weight: var(--weight-500);
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.modal-cancel-button:hover {
+    text-decoration: underline;
+}
+
+.offcanvas-close-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background: #F5F5F5;
+}
+
+.offcanvas-close-btn:hover {
+    background: #e0e0e0;
+}
+
+.department-btn {
+    background: #D3E9EF;
+    border: 1px solid #D3E9EF;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.department-btn:hover {
+    background: var(--theme-color);
+}
+
+.department-btn svg path {
+    transition: all 0.3s ease;
+}
+
+.department-btn:hover svg path {
+    fill: #fff;
+}
+
+.action-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.action-button svg path {
+    transition: all 0.3s ease;
+}
+
+.action-button:hover svg path {
+    stroke: var(--text-light-color);
+}
+
+.authentication-button {
+    background: var(--theme-color);
+    color: var(--text-white);
+    font-size: var(--font-14);
+    border-radius: 4px;
+    padding: 7px 20px;
+    width: 100%;
+    border: none;
+}
+
+.authentication-button:hover {
+    background: var(--secondary-theme-color);
+}
+
+.sso-login-button {
+    background: var(--light-theme-color);
+    font-size: var(--font-14);
+    font-weight: var(--weight-500);
+    border-radius: 4px;
+    padding: 7px 20px;
+    width: 100%;
+    border: none;
+}
+
+.sso-login-button img {
+    width: 15px;
+}
+
+.sso-login-button:hover {
+    background: var(--light-border-color);
+}
+
+.back-sso-btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-sso-btn .back-icon {
+    background: #f5f5fa;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.back-sso-btn:hover .back-icon {
+    background: var(--light-theme-color);
+}
+
+.org-see-more-btn {
+    color: var(--theme-color);
+    background: #4DA0A545;
+    font-size: var(--font-12);
+    font-weight: var(--weight-500);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.org-see-more-btn:hover {
+    color: var(--secondary-theme-color);
+    background: #43929645;
+    box-shadow: 0 2px 5px #00000015 !important;
+}
+
+.task-details-back-btn {
+    background: var(--theme-color);
+    border: none;
+    padding: 5px 7px;
+}
+
+.task-details-back-btn:hover {
+    background: var(--secondary-theme-color);
+}
